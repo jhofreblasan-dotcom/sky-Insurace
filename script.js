@@ -2,6 +2,7 @@
   "use strict";
 
   const trmEndpoint = "https://www.datos.gov.co/resource/32sa-8pi3.json";
+  const whatsappNumber = "573209561570";
   const tiers = [
     { key: "esencial", name: "Esencial", multiplier: 0.78, description: "Cobertura base" },
     { key: "recomendado", name: "Sky Plus", multiplier: 1, description: "Mejor relación valor/protección" },
@@ -282,7 +283,7 @@
       "Entiendo que es un valor orientativo y deseo recibir una cotización formal."
     ].filter(Boolean).join("\n");
     const quoteLink = $("#btn-send-quote-wa");
-    quoteLink.href = `https://api.whatsapp.com/send?text=${encodeURIComponent(message)}`;
+    quoteLink.href = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(message)}`;
     quoteLink.setAttribute("aria-disabled", String(unavailable));
     quoteLink.classList.toggle("is-disabled", unavailable);
     quoteLink.title = unavailable
@@ -292,7 +293,7 @@
 
     $$(".wa-sync").forEach((link) => {
       const genericMessage = link.dataset.waMsg || "Hola Sky Insurance, deseo recibir asesoría.";
-      link.href = `https://api.whatsapp.com/send?text=${encodeURIComponent(genericMessage)}`;
+      link.href = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(genericMessage)}`;
     });
   }
 
