@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sky Insurance | Cotizador Inteligente de Seguros</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,700;0,800;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- FONDO ANIMADO DE PARTÍCULAS Y AURORA -->
+  <div class="bg-aurora" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- BARRA DE NAVEGACIÓN -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#inicio" class="brand-logo" aria-label="Sky Insurance">
+        <!-- Si usas tu imagen logo.jpg, descomenta esta línea y comenta el div.css-logo -->
+        <!-- <img src="logo.jpg" alt="Sky Insurance Logo" class="logo-img"> -->
+        <div class="css-logo">
+          <span class="logo-sky">Sky</span>
+          <span class="logo-insurance">Insurance</span>
+          <span class="logo-swoosh"></span>
+        </div>
+      </a>
+
+      <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+      <label for="menu-toggle" class="menu-icon" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="nav-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#seguros">Pólizas</a>
+        <a href="#cotizador">Cotizador</a>
+        <a href="#ventajas">¿Por qué Sky?</a>
+        <a href="#preguntas">Preguntas</a>
+        <a href="#" data-wa-msg="Hola Sky Insurance, deseo recibir asesoría sobre un seguro." target="_blank" rel="noopener noreferrer" class="btn-nav-wa wa-sync">
+          <svg viewBox="0 0 24 24" class="wa-icon-sm"><path fill="currentColor" d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/></svg>
+          Asesor WhatsApp
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <!-- SECCIÓN HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="badge-pill">
+            <span class="pulse-dot"></span> Protección Respaldada 24/7
+          </div>
+          <h1>Tu tranquilidad no se negocia, <span class="text-gradient">se asegura bajo el cielo de Sky.</span></h1>
+          <p class="hero-subtitle">
+            Simula tu propuesta inicial en segundos en <strong>COP o USD</strong> para tu vida, tu vehículo o tu responsabilidad civil, y cierra tu póliza directamente con un asesor en WhatsApp.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#cotizador" class="btn-primary-sky">
+              <span class="btn-glow"></span>
+              ⚡ Simular mi Propuesta Ahora
+            </a>
+            <a href="#" data-wa-msg="Hola Sky Insurance, quiero hablar con un asesor ahora mismo." target="_blank" rel="noopener noreferrer" class="btn-secondary wa-sync">
+              Hablar por WhatsApp
+            </a>
+          </div>
+
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <strong>+15K</strong>
+              <span>Clientes Protegidos</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <strong>&lt; 3 min</strong>
+              <span>Respuesta WhatsApp</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <strong>COP / USD</strong>
+              <span>Cotización Dual</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ESCUDO HOLOGRÁFICO -->
+        <div class="hero-visual">
+          <div class="shield-wrapper">
+            <div class="orbit-ring ring-1"></div>
+            <div class="orbit-ring ring-2"></div>
+            <div class="shield-card">
+              <div class="shield-header">
+                <span class="status-tag">Cobertura Activa</span>
+                <span class="sky-badge">SKY 360°</span>
+              </div>
+              <div class="shield-icon-box">
+                <svg viewBox="0 0 24 24" class="shield-svg">
+                  <path fill="currentColor" d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-1.45 14.54L6.7 11.7l1.41-1.41 2.44 2.44 5.34-5.34 1.41 1.41-6.75 6.74z"/>
+                </svg>
+              </div>
+              <h3>Protección Integral</h3>
+              <p>Vida • Vehículos • Responsabilidad Civil</p>
+              <div class="shield-bars">
+                <div class="bar-row">
+                  <span>Respaldo Patrimonial</span>
+                  <div class="bar-track"><div class="bar-fill fill-100"></div></div>
+                </div>
+                <div class="bar-row">
+                  <span>Asistencia Vial y Médica</span>
+                  <div class="bar-track"><div class="bar-fill fill-95"></div></div>
+                </div>
+              </div>
+            </div>
+            <div class="floating-chip chip-top">🚗 Asistencia Grúa 24/7</div>
+            <div class="floating-chip chip-bottom">🛡️ Propuesta Inmediata</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CINTA ANIMADA INFINITA -->
+    <div class="marquee-banner">
+      <div class="marquee-track">
+        <span>✦ SEGUROS DE VIDA</span>
+        <span>✦ SEGUROS TODO RIESGO VEHÍCULOS</span>
+        <span>✦ RESPONSABILIDAD CIVIL EXTRACONTRACTUAL</span>
+        <span>✦ COTIZACIÓN INMEDIATA EN COP Y USD</span>
+        <span>✦ ATENCIÓN DIRECTA VÍA WHATSAPP</span>
+        <span>✦ SEGUROS DE VIDA</span>
+        <span>✦ SEGUROS TODO RIESGO VEHÍCULOS</span>
+        <span>✦ RESPONSABILIDAD CIVIL EXTRACONTRACTUAL</span>
+        <span>✦ COTIZACIÓN INMEDIATA EN COP Y USD</span>
+        <span>✦ ATENCIÓN DIRECTA VÍA WHATSAPP</span>
+      </div>
+    </div>
+
+    <!-- ====================================================================
+         MÓDULO COTIZADOR INTERACTIVO EN VIVO (HTML + CSS + JS)
+         ==================================================================== -->
+    <section id="cotizador" class="quoter-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">SIMULADOR INTELIGENTE SKY</span>
+          <h2>Calcula tu propuesta inicial al instante</h2>
+          <p>Ajusta tus variables, compara los 3 niveles de cobertura y envía tu propuesta lista directamente a nuestro WhatsApp.</p>
+        </div>
+
+        <div class="quoter-shell">
+          <!-- Barra superior: Selector de seguro + Switch Moneda COP / USD -->
+          <div class="quoter-topbar">
+            <div class="insurance-tabs" role="tablist">
+              <button type="button" class="q-tab active" data-type="vida" role="tab">💙 Seguro de Vida</button>
+              <button type="button" class="q-tab" data-type="vehiculo" role="tab">🚘 Vehículos</button>
+              <button type="button" class="q-tab" data-type="rc" role="tab">⚖️ Responsabilidad Civil</button>
+            </div>
+
+            <div class="currency-control">
+              <span class="trm-hint" id="trm-label" aria-live="polite">Consultando TRM oficial…</span>
+              <div class="currency-switch" role="group" aria-label="Selector de moneda">
+                <button type="button" class="curr-btn active" data-currency="COP">🇨🇴 COP</button>
+                <button type="button" class="curr-btn" data-currency="USD">🇺🇸 USD</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="quoter-body">
+            <!-- COLUMNA IZQUIERDA: CONTROLES INTERACTIVOS -->
+            <div class="quoter-controls">
+              <!-- Controles: SEGURO DE VIDA -->
+              <div class="control-group active" id="controls-vida">
+                <div class="field-box">
+                  <div class="field-label">
+                    <label for="vida-edad">Tu edad actual</label>
+                    <strong id="vida-edad-val">34 años</strong>
+                  </div>
+                  <input type="range" id="vida-edad" min="18" max="65" step="1" value="34">
+                  <div class="range-marks"><span>18 años</span><span>40 años</span><span>65 años</span></div>
+                </div>
+
+                <div class="field-box">
+                  <div class="field-label">
+                    <label for="vida-capital">Capital a asegurar</label>
+                    <strong id="vida-capital-val">$200.000.000 COP</strong>
+                  </div>
+                  <input type="range" id="vida-capital" min="50000000" max="500000000" step="25000000" value="200000000">
+                  <div class="range-marks"><span>$50M</span><span>$250M</span><span>$500M</span></div>
+                </div>
+
+                <div class="extras-box">
+                  <h4>Personaliza tu blindaje (opcional)</h4>
+                  <label class="switch-row">
+                    <span>
+                      <strong>Enfermedades graves</strong>
+                      <small>Anticipo de capital por cáncer, infarto o ACV</small>
+                    </span>
+                    <input type="checkbox" class="extra-toggle" data-group="vida" data-key="graves" checked>
+                    <span class="slider-switch"></span>
+                  </label>
+                  <label class="switch-row">
+                    <span>
+                      <strong>Incapacidad total y permanente</strong>
+                      <small>Respaldo económico si no puedes trabajar</small>
+                    </span>
+                    <input type="checkbox" class="extra-toggle" data-group="vida" data-key="incapacidad" checked>
+                    <span class="slider-switch"></span>
+                  </label>
+                  <label class="switch-row">
+                    <span>
+                      <strong>Auxilio exequial y hospitalización</strong>
+                      <small>Asistencia familiar y renta diaria hospitalaria</small>
+                    </span>
+                    <input type="checkbox" class="extra-toggle" data-group="vida" data-key="exequial">
+                    <span class="slider-switch"></span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Controles: VEHÍCULOS -->
+              <div class="control-group" id="controls-vehiculo">
+                <div class="field-box">
+                  <div class="field-label">
+                    <label id="veh-tipo-label">Tipo de vehículo</label>
+                  </div>
+                  <div class="pill-selector" id="veh-tipo-group" role="group" aria-labelledby="veh-tipo-label">
+                    <button type="button" class="pill-opt active" data-val="auto">🚗 Automóvil</button>
+                    <button type="button" class="pill-opt" data-val="suv">🚙 Camioneta / SUV</button>
+                    <button type="button" class="pill-opt" data-val="moto">🏍️ Motocicleta</button>
+                  </div>
+                </div>
+
+                <div class="field-box">
+                  <div class="field-label">
+                    <label for="veh-valor">Valor comercial estimado</label>
+                    <strong id="veh-valor-val">$65.000.000 COP</strong>
+                  </div>
+                  <input type="range" id="veh-valor" min="15000000" max="250000000" step="5000000" value="65000000">
+                  <div class="range-marks"><span>$15M</span><span>$120M</span><span>$250M</span></div>
+                </div>
+
+                <div class="field-box">
+                  <div class="field-label">
+                    <label for="veh-edad">Rango de edad del conductor</label>
+                  </div>
+                  <select id="veh-edad" class="sky-select">
+                    <option value="18-25">18 a 25 años</option>
+                    <option value="26-35" selected>26 a 35 años</option>
+                    <option value="36-45">36 a 45 años</option>
+                    <option value="46+">46 años o más</option>
+                  </select>
+                </div>
+
+                <div class="extras-box">
+                  <h4>Asistencias adicionales</h4>
+                  <label class="switch-row">
+                    <span>
+                      <strong>Vehículo de reemplazo</strong>
+                      <small>Auto sustituto en caso de taller por siniestro</small>
+                    </span>
+                    <input type="checkbox" class="extra-toggle" data-group="vehiculo" data-key="reemplazo" checked>
+                    <span class="slider-switch"></span>
+                  </label>
+                  <label class="switch-row">
+                    <span>
+                      <strong>Llaves, vidrios y pequeños accesorios</strong>
+                      <small>Reposición rápida sin afectar tu bonificación</small>
+                    </span>
+                    <input type="checkbox" class="extra-toggle" data-group="vehiculo" data-key="vidrios">
+                    <span class="slider-switch"></span>
+                  </label>
+                  <label class="switch-row">
+                    <span>
+                      <strong>Conductor elegido y grúa ampliada</strong>
+                      <small>Cobertura nacional 24/7 sin límites cortos</small>
+                    </span>
+                    <input type="checkbox" class="extra-toggle" data-group="vehiculo" data-key="asistencia" checked>
+                    <span class="slider-switch"></span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Controles: RESPONSABILIDAD CIVIL -->
+              <div class="control-group" id="controls-rc">
+                <div class="field-box">
+                  <div class="field-label">
+                    <label for="rc-perfil">Tipo de póliza RC</label>
+                  </div>
+                  <select id="rc-perfil" class="sky-select">
+                    <option value="hogar">Personal / Familiar / Hogar</option>
+                    <option value="rce">RCE Vehicular (Daños a terceros)</option>
+                    <option value="profesional" selected>Profesional Independiente (Médico, Ing., Abogado)</option>
+                    <option value="pyme">Pyme / Empresa / Contratista</option>
+                  </select>
+                </div>
+
+                <div class="field-box">
+                  <div class="field-label">
+                    <label for="rc-limite">Límite máximo de cobertura</label>
+                    <strong id="rc-limite-val">$500.000.000 COP</strong>
+                  </div>
+                  <input type="range" id="rc-limite" min="100000000" max="2000000000" step="100000000" value="500000000">
+                  <div class="range-marks"><span>$100M</span><span>$1.000M</span><span>$2.000M</span></div>
+                </div>
+
+                <div class="extras-box">
+                  <h4>Amparos jurídicos adicionales</h4>
+                  <label class="switch-row">
+                    <span>
+                      <strong>Defensa legal y cauciones judiciales</strong>
+                      <small>Abogados especializados desde el primer reclamo</small>
+                    </span>
+                    <input type="checkbox" class="extra-toggle" data-group="rc" data-key="defensa" checked>
+                    <span class="slider-switch"></span>
+                  </label>
+                  <label class="switch-row">
+                    <span>
+                      <strong>Perjuicios extrapatrimoniales y lucro cesante</strong>
+                      <small>Cobertura ante demandas por daño moral</small>
+                    </span>
+                    <input type="checkbox" class="extra-toggle" data-group="rc" data-key="moral">
+                    <span class="slider-switch"></span>
+                  </label>
+                  <label class="switch-row">
+                    <span>
+                      <strong>Predios, labores y contratistas</strong>
+                      <small>Respaldo en oficinas, obras y terceros</small>
+                    </span>
+                    <input type="checkbox" class="extra-toggle" data-group="rc" data-key="predios">
+                    <span class="slider-switch"></span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Medidor visual de nivel de protección -->
+              <div class="protection-meter">
+                <div class="meter-header">
+                  <span>Índice de Protección Configurado</span>
+                  <strong id="protection-score">82% — Blindaje Alto</strong>
+                </div>
+                <div class="meter-track">
+                  <div class="meter-fill" id="protection-bar" style="width: 82%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- COLUMNA DERECHA: PROPUESTA INICIAL EN 3 NIVELES + RESUMEN -->
+            <div class="quoter-results">
+              <div class="tiers-header">
+                <h3>Selecciona tu nivel de propuesta inicial</h3>
+                <span class="ref-tag">Tarifa estimada de referencia</span>
+              </div>
+
+              <div class="tier-cards" id="tier-cards">
+                <button type="button" class="tier-card" data-tier="esencial">
+                  <span class="tier-name">Esencial</span>
+                  <strong class="tier-price" id="price-esencial">$0</strong>
+                  <small class="tier-sub" id="sub-esencial">/ mes estimado</small>
+                  <p class="tier-desc" id="desc-esencial">Cobertura base</p>
+                </button>
+
+                <button type="button" class="tier-card active" data-tier="recomendado">
+                  <span class="tier-badge">Recomendado</span>
+                  <span class="tier-name">Sky Plus</span>
+                  <strong class="tier-price" id="price-recomendado">$0</strong>
+                  <small class="tier-sub" id="sub-recomendado">/ mes estimado</small>
+                  <p class="tier-desc" id="desc-recomendado">Mejor relación valor/protección</p>
+                </button>
+
+                <button type="button" class="tier-card" data-tier="total">
+                  <span class="tier-name">Total 360°</span>
+                  <strong class="tier-price" id="price-total">$0</strong>
+                  <small class="tier-sub" id="sub-total">/ mes estimado</small>
+                  <p class="tier-desc" id="desc-total">Máximo respaldo sin límites cortos</p>
+                </button>
+              </div>
+
+              <!-- Tarjeta de Propuesta Inicial Detallada -->
+              <div class="proposal-summary">
+                <div class="proposal-top">
+                  <div>
+                    <span class="proposal-kicker" id="prop-kicker">PROPUESTA INICIAL • SEGURO DE VIDA</span>
+                    <h4 id="prop-title">Plan Sky Plus (Recomendado)</h4>
+                  </div>
+                  <div class="proposal-price-box">
+                    <span class="price-main" id="prop-monthly">$0</span>
+                    <span class="price-annual" id="prop-annual">Anual estimado: $0</span>
+                  </div>
+                </div>
+
+                <ul class="proposal-highlights" id="prop-highlights">
+                  <!-- Dinámico vía JS -->
+                </ul>
+
+                <p class="proposal-disclaimer">
+                  * Simulación orientativa, no es una cotización ni una tarifa oficial de aseguradora. El modelo usa porcentajes ilustrativos sobre el capital, valor o límite configurado y puede diferir de la oferta final. Los capitales y valores asegurados se ingresan en COP; al elegir USD se convierten para su visualización. La conversión usa la TRM publicada por la Superintendencia Financiera de Colombia en <a href="https://www.datos.gov.co/Econom-a-y-Finanzas/Tasa-de-Cambio-Representativa-del-Mercado-TRM/32sa-8pi3" target="_blank" rel="noopener noreferrer">Datos Abiertos</a>.
+                </p>
+
+                <div class="proposal-actions">
+                  <a href="#" id="btn-send-quote-wa" target="_blank" rel="noopener noreferrer" class="btn-primary-wa btn-full">
+                    <span class="btn-glow"></span>
+                    <svg viewBox="0 0 24 24" class="wa-icon"><path fill="currentColor" d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/></svg>
+                    Enviar esta Propuesta por WhatsApp
+                  </a>
+                  <button type="button" id="btn-copy-quote" class="btn-copy">
+                    📋 Copiar Resumen
+                  </button>
+                </div>
+                <p id="quote-feedback" class="quote-feedback" role="status" aria-live="polite"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN DE SERVICIOS PRINCIPALES -->
+    <section id="seguros" class="services-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">NUESTRAS LÍNEAS DE PROTECCIÓN</span>
+          <h2>Soluciones diseñadas para lo que más valoras</h2>
+          <p>Elige la póliza que deseas simular o contáctanos directamente por WhatsApp para asesoría personalizada.</p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="service-card">
+            <div class="card-top">
+              <div class="icon-circle">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+              </div>
+              <span class="card-tag">Futuro Familiar</span>
+            </div>
+            <h3>Seguro de Vida</h3>
+            <p class="card-desc">Garantiza la estabilidad económica de quienes amas ante cualquier eventualidad, incapacidad o enfermedad grave.</p>
+            <ul class="feature-list">
+              <li>Respaldo económico inmediato para beneficiarios</li>
+              <li>Cobertura por incapacidad total y permanente</li>
+              <li>Anticipo de capital por enfermedades graves</li>
+              <li>Auxilio exequial y telemedicina 24/7</li>
+            </ul>
+            <a href="#cotizador" class="btn-card-wa jump-quoter" data-jump="vida">
+              Simular Seguro de Vida →
+            </a>
+          </article>
+
+          <article class="service-card card-featured">
+            <div class="featured-ribbon">Más Solicitado</div>
+            <div class="card-top">
+              <div class="icon-circle">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg>
+              </div>
+              <span class="card-tag">Movilidad Total</span>
+            </div>
+            <h3>Seguros para Vehículos</h3>
+            <p class="card-desc">Protegemos tu automóvil, camioneta o motocicleta contra robo, accidentes y daños a terceros con asistencia 24/7.</p>
+            <ul class="feature-list">
+              <li>Pérdida parcial o total por daños y hurto</li>
+              <li>Grúa, carro taller y conductor elegido 24/7</li>
+              <li>Vehículo de reemplazo durante reparaciones</li>
+              <li>Asistencia jurídica en vía y trámites ágiles</li>
+            </ul>
+            <a href="#cotizador" class="btn-card-wa btn-featured-wa jump-quoter" data-jump="vehiculo">
+              Simular mi Vehículo →
+            </a>
+          </article>
+
+          <article class="service-card">
+            <div class="card-top">
+              <div class="icon-circle">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2L4 5v6.09c0 5.05 3.41 9.76 8 10.91 4.59-1.15 8-5.86 8-10.91V5l-8-3zm1 14h-2v-2h2v2zm0-4h-2V7h2v5z"/></svg>
+              </div>
+              <span class="card-tag">Blindaje Patrimonial</span>
+            </div>
+            <h3>Responsabilidad Civil</h3>
+            <p class="card-desc">Protege tu patrimonio personal, profesional o empresarial frente a reclamaciones de terceros por daños o lesiones.</p>
+            <ul class="feature-list">
+              <li>Responsabilidad civil general, médica y profesional</li>
+              <li>Defensa legal especializada y cauciones</li>
+              <li>Perjuicios patrimoniales y extrapatrimoniales</li>
+              <li>Pólizas para empresas, contratistas y transporte</li>
+            </ul>
+            <a href="#cotizador" class="btn-card-wa jump-quoter" data-jump="rc">
+              Simular Responsabilidad Civil →
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CÓMO FUNCIONA -->
+    <section id="ventajas" class="steps-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">CERO FRICCIÓN</span>
+          <h2>Asegurarte nunca fue tan rápido</h2>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-box">
+            <div class="step-num">01</div>
+            <h3>Simula tu Póliza</h3>
+            <p>Configura el capital, valor comercial o límite de cobertura y compara en COP o USD al instante.</p>
+          </div>
+          <div class="step-box">
+            <div class="step-num">02</div>
+            <h3>Envíala por WhatsApp</h3>
+            <p>Al hacer clic, tu propuesta llega precargada a nuestro chat para que un asesor experto valide descuentos vigentes.</p>
+          </div>
+          <div class="step-box">
+            <div class="step-num">03</div>
+            <h3>Quedas Protegido</h3>
+            <p>Emitimos tu póliza digitalmente y cuentas con acompañamiento permanente en renovaciones y siniestros.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PREGUNTAS FRECUENTES -->
+    <section id="preguntas" class="faq-section">
+      <div class="container faq-container">
+        <div class="section-header">
+          <span class="eyebrow">RESOLVEMOS TUS DUDAS</span>
+          <h2>Preguntas Frecuentes</h2>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary>¿El precio del cotizador es definitivo?</summary>
+            <p>Es una simulación orientativa generada con un modelo ilustrativo; no representa tarifas promedio ni una oferta de una aseguradora. Al enviarla por WhatsApp, un asesor puede validar tu perfil y consultar la tarifa definitiva.</p>
+          </details>
+          <details class="faq-item">
+            <summary>¿Puedo contratar si estoy fuera del país o pagar en dólares?</summary>
+            <p>Sí, puedes visualizar la propuesta tanto en COP como en USD para facilitar tu presupuesto y coordinar con tu asesor la forma de pago más cómoda.</p>
+          </details>
+          <details class="faq-item">
+            <summary>¿Qué pasa si tengo un accidente o siniestro?</summary>
+            <p>Nuestro equipo de Sky Insurance te acompaña paso a paso en la reclamación, solicitud de grúa, asistencia jurídica y seguimiento de indemnización.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- BANNER FINAL -->
+    <section class="cta-banner">
+      <div class="container">
+        <div class="cta-card">
+          <h2>¿Prefieres una cotización a la medida con un asesor?</h2>
+          <p>Escríbenos directamente y recibe tu cuadro comparativo en minutos sin ningún compromiso.</p>
+          <a href="#" data-wa-msg="Hola Sky Insurance, quiero una cotización personalizada con un asesor." target="_blank" rel="noopener noreferrer" class="btn-primary-wa btn-large wa-sync">
+            Iniciar Chat en WhatsApp Ahora
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="css-logo">
+        <span class="logo-sky">Sky</span>
+        <span class="logo-insurance">Insurance</span>
+        <span class="logo-swoosh"></span>
+      </div>
+      <p>© 2026 Sky Insurance. Seguros de Vida, Vehículos y Responsabilidad Civil. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+  <a href="#" data-wa-msg="Hola Sky Insurance, necesito información sobre sus seguros." target="_blank" rel="noopener noreferrer" class="floating-wa wa-sync" aria-label="Chatear por WhatsApp">
+    <span class="wa-tooltip">¡Cotiza en línea aquí!</span>
+    <span class="wa-ring ring-a"></span>
+    <span class="wa-ring ring-b"></span>
+    <svg viewBox="0 0 24 24" class="wa-float-icon">
+      <path fill="currentColor" d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
